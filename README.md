@@ -2,7 +2,7 @@
 code release for "Heuristic Domain Adaptation"(NIPS2020)
 
 ## Poster
-
+* Our NeurIPS poster
 <div>
 <img src="doc/poster.pdf" width="800">
 <div>
