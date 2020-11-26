@@ -4,7 +4,7 @@ code release for "Heuristic Domain Adaptation"(NIPS2020)
 ## Poster
 
 <div>
-<img src="./doc/poster.pdf" width="800">
+<img src="./doc/poster.jpg" width="800">
 <div>
 
   
