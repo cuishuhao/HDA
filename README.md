@@ -39,17 +39,17 @@ unzip data.zip
 ```
 
 ## Train
-###UDA on Office-Home
+### UDA on Office-Home
 ```
 bash scripts/run_uda.sh
 ```
 
-###MSDA on Domainnet
+### MSDA on Domainnet
 ```
 bash scripts/run_msda.sh
 ```
 
-###SSDA on Domainnet
+### SSDA on Domainnet
 ```
 bash scripts/run_ssda.sh
 ```
