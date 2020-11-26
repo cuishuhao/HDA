@@ -1,10 +1,12 @@
 # HDA implemneted in PyTorch
 code release for "Heuristic Domain Adaptation"(NIPS2020)
 
-##Poster
+## Poster
+
 <div>
 <img src="doc/poster.pdf" width="800">
 <div>
+  
 ## Enviroment
 - pytorch = 1.3.0
 - torchvision = 0.4.1
