@@ -1,6 +1,7 @@
 # HDA implemented in PyTorch
 code release for "Heuristic Domain Adaptation"(NIPS2020)
-
+## One sentence highlight
+We address the construction of domain-invariant and domain-specific representations from the heuristic search perspective.
 ## Poster
 
 <div>
@@ -22,7 +23,7 @@ To install the required python packages, run
 pip install -r requirements.txt
 ```
 
-## dataset
+## Dataset
 
 Office-Home dataset can be found [here](http://hemanthdv.org/OfficeHome-Dataset/).
 
@@ -37,7 +38,7 @@ cd data
 unzip data.zip
 ```
 
-## training
+## Train
 ###UDA on Office-Home
 ```
 bash scripts/run_uda.sh
