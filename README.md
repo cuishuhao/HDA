@@ -1,5 +1,5 @@
 # HDA implemented in PyTorch
-code release for "Heuristic Domain Adaptation"(NIPS2020)
+code release for ["Heuristic Domain Adaptation"](https://arxiv.org/abs/2011.14540)(NIPS2020)
 ## One sentence highlight
 We address the construction of domain-invariant and domain-specific representations from the heuristic search perspective.
 ## Poster
