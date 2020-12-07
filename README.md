@@ -71,3 +71,6 @@ If you have any problem about our code, feel free to contact
 
 or describe your problem in Issues.
 
+[Note](https://zhuanlan.zhihu.com/p/318547208)
+[量子位](https://zhuanlan.zhihu.com/p/309479647)
+
