@@ -129,6 +129,7 @@ if __name__ == "__main__":
                       "test":{"list_path":args.t_dset_path, "batch_size":args.batch_size}}
         train_uda(config)
     elif args.task== "SSDA":
+        config["network"]["params"]["class_num"] = 126
         target_path = args.t_dset_path.replace('.txt','_'+str(args.num_labels)+'.txt')
         config["data"] = {"source":{"list_path":args.s_dset_path, "batch_size":args.batch_size}, \
                       "target1":{"list_path":target_path, "batch_size":args.batch_size}, \
