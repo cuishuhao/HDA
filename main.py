@@ -134,7 +134,7 @@ if __name__ == "__main__":
         config["data"] = {"source":{"list_path":args.s_dset_path, "batch_size":args.batch_size}, \
                       "target1":{"list_path":target_path, "batch_size":args.batch_size}, \
                       "target2":{"list_path":target_path.replace('labeled', 'unlabeled'), "batch_size":args.batch_size}, \
-                      "test":{"list_path":target_path.replace('labeled','validation').replace(str(1),str(3)), "batch_size":args.batch_size}}
+                      "test":{"list_path":target_path.replace('labeled','unlabeled'), "batch_size":args.batch_size}}
         train_ssda(config)
     elif args.task== "MSDA":
         config["data"] = {"target":{"list_path":args.t_dset_path, "batch_size":args.batch_size}, \
