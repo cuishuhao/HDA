@@ -46,6 +46,7 @@ if __name__ == "__main__":
     parser.add_argument('--batch_size', type=int, default=36, help="batch size")
     parser.add_argument('--seed', type=int, default=0, help="batch size")
     parser.add_argument('--heuristic_num', type=int, default=1, help="number of heuristic subnetworks")
+    parser.add_argument('--heuristic_initial', type=bool, default=False, help="number of heuristic subnetworks")
     parser.add_argument('--heuristic', type=float, default=1, help="lambda: parameter for heuristic (if lambda==0 then heuristic is not utilized)")
     parser.add_argument('--gauss', type=float, default=0, help="utilize different initialization or not)")
     parser.add_argument('--num_labels', type=int, default=1, help="parameter for SSDA")
@@ -75,7 +76,7 @@ if __name__ == "__main__":
     config["loss"] = {"trade_off":args.trade_off}
     if "ResNet" in args.net:
         config["network"] = {"name":network.ResNetFc, \
-            "params":{"resnet_name":args.net, "bottleneck_dim":256, "new_cls":True, "heuristic_num":args.heuristic_num} }
+            "params":{"resnet_name":args.net, "bottleneck_dim":256, "new_cls":True, "heuristic_num":args.heuristic_num, "heuristic_initial":args.heuristic_initial} }
     else:
         raise ValueError('Network cannot be recognized. Please define your own dataset here.')
 

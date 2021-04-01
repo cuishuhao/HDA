@@ -92,7 +92,7 @@ def grl_hook(coeff):
     return fun1
 
 class ResNetFc(nn.Module):
-  def __init__(self, resnet_name, bottleneck_dim=256, new_cls=False, class_num=1000, heuristic_num=1):
+  def __init__(self, resnet_name, bottleneck_dim=256, new_cls=False, class_num=1000, heuristic_num=1, heuristic_initial=False):
     super(ResNetFc, self).__init__()
     model_resnet = resnet_dict[resnet_name](pretrained=True)
     self.conv1 = model_resnet.conv1
@@ -113,7 +113,10 @@ class ResNetFc(nn.Module):
     self.heuristic_num = heuristic_num
     if new_cls:
         self.fc = nn.Linear(model_resnet.fc.in_features, class_num)
-        self.fc.apply(hun_weights)
+        if heuristic_initial:
+            self.fc.apply(hun_weights)
+        else:
+            self.fc.apply(init_weights)
         self.heuristic = nn.Linear(model_resnet.fc.in_features, class_num)
         self.heuristic.apply(init_weights)
         self.heuristic1 = nn.Linear(model_resnet.fc.in_features, class_num)
