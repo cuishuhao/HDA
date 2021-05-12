@@ -58,11 +58,16 @@ bash scripts/run_ssda.sh
 If you use this code for your research, please consider citing:
 ```
 @inproceedings{cui2020hda,
-title={Heuristic Domain Adaptation},
-author={Cui, Shuhao and Jin, Xuan, and Wang, Shuhui and He, Yuan and Huang, Qingming},
-booktitle={Advances in Neural Information Processing Systems},
-year={2020}
+ author = {Cui, Shuhao and Jin, Xuan and Wang, Shuhui and He, Yuan and Huang, Qingming},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {7571--7583},
+ publisher = {Curran Associates, Inc.},
+ title = {Heuristic Domain Adaptation},
+ volume = {33},
+ year = {2020}
 }
+
+
 ```
 
 ## Contact                                                                                                                                                                       
